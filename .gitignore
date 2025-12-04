@@ -30,6 +30,8 @@ agentfoundry-finetuned/
 agentfoundry_dataset/
 agentfoundry-finetuned-fixed.zip
 agentfoundry-finetuned.zip
+HealthCareMagic-100k.json
+iCliniq.json
 *.bin
 *.safetensors
 faiss_indexes/
