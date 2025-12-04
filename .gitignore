@@ -24,6 +24,7 @@ wheels/
 .pytest_cache/
 .coverage
 htmlcov/
+offload/
 *.log
 agentfoundry-finetuned/
 agentfoundry_dataset/
