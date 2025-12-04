@@ -1,0 +1,38 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# ML/AI
+torch==2.1.0
+transformers==4.35.0
+peft==0.6.0
+accelerate==0.24.1
+bitsandbytes==0.41.0
+sentence-transformers==2.2.2
+
+# Vector DB
+faiss-cpu==1.7.4
+
+# Database
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+alembic==1.12.1
+redis==5.0.1
+
+# Blockchain
+web3==6.11.3
+py-solc-x==1.1.1
+
+# OCR
+pytesseract==0.3.10
+Pillow==10.1.0
+
+# Utils
+python-dotenv==1.0.0
+httpx==0.25.1
+websockets==12.0
+celery==5.3.4
+
+
