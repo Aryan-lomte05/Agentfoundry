@@ -1,4 +1,4 @@
-# AgentFoundry — a multi-agent healthcare backend with an auditable message bus
+# AgentFoundry: a multi-agent healthcare backend with an auditable message bus
 
 **Nine specialised medical agents that talk to each other over a priority message bus, on top of a
 domain-adapted BioMistral-7B, with every inter-agent message anchored to an on-chain audit log.**
@@ -70,13 +70,13 @@ into an Indian OPD, including code-mixed Hinglish phrasing as patients really wr
 
 - A cough lasting over two weeks triggers a **TB workup** (chest X-ray, CBNAAT/GeneXpert) rather than a generic
   cough response.
-- Orange-red urine after starting treatment is **Rifampicin**, a harmless side effect of the AKT-4 kit — and
+- Orange-red urine after starting treatment is **Rifampicin**, a harmless side effect of the AKT-4 kit, and
   the answer tells the patient *not to stop the medication*, because stopping is the real danger.
 - Breathlessness plus work in a stone-crushing unit points to **silicosis**, with its TB comorbidity.
 - A matted painless neck swelling raises **scrofula** (tuberculous lymphadenitis) and an FNAC for AFB.
 - An eschar with fever and travel history is **scrub typhus**: start doxycycline, send IgM ELISA.
 - Avoid Combiflam (an NSAID) in suspected **dengue** because of bleeding risk.
-- Inhalers are **not addictive** — answering a specific, widespread myth rather than a textbook question.
+- Inhalers are **not addictive**, answering a specific, widespread myth rather than a textbook question.
 
 Each of those is a case where a plausible-sounding generic answer is a clinically wrong answer in India.
 
@@ -99,8 +99,8 @@ append-only and independently verifiable. Patient records themselves are **not**
 
 ## Retrieval
 
-`rag/` is a conventional four-part pipeline — `embeddings.py`, `vector_store.py`, `knowledge_bases.py`,
-`retrieval.py` — with knowledge bases kept separate per domain so a treatment lookup does not retrieve from an
+`rag/` is a conventional four-part pipeline of `embeddings.py`, `vector_store.py`, `knowledge_bases.py`,
+`retrieval.py`, with knowledge bases kept separate per domain so a treatment lookup does not retrieve from an
 unrelated corpus. Treatment proposals are grounded in retrieved text rather than generated free-hand.
 
 ## API surface
@@ -155,14 +155,14 @@ used to make real clinical decisions.
 - **The emergency path is not a safety system.** `emergency_agent` raises priority on the bus; it is not a
   certified triage system and there is no guaranteed latency bound.
 - **Contracts are unaudited** and were deployed to a test network only.
-- **Patient data handling is prototype-grade** — adequate for a demo, not for real patient data under DPDP or
+- **Patient data handling is prototype-grade**, adequate for a demo, not for real patient data under DPDP or
   HIPAA.
 
 ---
 
 ## Team
 
-**HealthFourUs** — Aryan Lomte, Shivam Verma, Aditya Yadav, Sujal Thakkar.
+**HealthFourUs**: Aryan Lomte, Shivam Verma, Aditya Yadav, Sujal Thakkar.
 
 Related repositories: the Next.js 3D frontend lives in
 [HealthFourUS](https://github.com/Aryan-lomte05/HealthFourUS).
